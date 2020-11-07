@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MusicApi</string>
+    <string name="input_the_country">Input the country</string>
+</resources>
