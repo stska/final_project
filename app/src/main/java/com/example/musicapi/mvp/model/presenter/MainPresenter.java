@@ -1,7 +1,6 @@
 package com.example.musicapi.mvp.model.presenter;
 
 import com.example.musicapi.MusicInfoApplication;
-import com.example.musicapi.mvp.model.entity.MusicApiResponse;
 import com.example.musicapi.mvp.view.MainView;
 import com.example.musicapi.navigation.Screens;
 
@@ -23,6 +22,13 @@ public class MainPresenter extends MvpPresenter<MainView> {
     protected void onFirstViewAttach() {
         super.onFirstViewAttach();
         router.replaceScreen(new Screens.CountryTopScreen());
+    }
+    public void searchOptions(int pageId) {
+        if (pageId == 1) {
+            router.navigateTo(new Screens.LyricsSearchScreen());
+        } else {
+            router.replaceScreen(new Screens.CountryTopScreen());
+        }
     }
 
     public void backClicked() {
