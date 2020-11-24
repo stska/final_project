@@ -5,11 +5,9 @@ import moxy.viewstate.strategy.AddToEndSingleStrategy;
 import moxy.viewstate.strategy.StateStrategyType;
 
 @StateStrategyType(AddToEndSingleStrategy.class)
-public interface CountryPickView extends MvpView {
-    void init();
-    void setArtName(String name);
-    void setArtScore(String score);
-    void setArtSongName(String songName);
-    void updateList();
-
+public interface LyricsResultView  extends MvpView {
+    void updateCard();
+    void setSongTitle(String song);
+    void setSingerName(String singerName);
+    void setLyrics(String lyrics);
 }

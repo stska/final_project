@@ -20,6 +20,7 @@ public class AppModule {
 
     @Provides
     public Scheduler mainThreadScheduler() {
+
         return AndroidSchedulers.mainThread();
     }
 }

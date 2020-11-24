@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">MusicApi</string>
     <string name="input_the_country">Input the country</string>
+    <string name="powered_by_musixmatch">powered by musixmatch</string>
+    <string name="textview">twitter info</string>
+    <string name="artist">Artist:</string>
+    <string name="score">Score:</string>
+    <string name="twitter">Twitter:</string>
+    <string name="text_label_1">Top artists</string>
+    <string name="text_label_2">Lyrics</string>
+    <string name="label">singer</string>
+    <string name="label2">song</string>
+    <string name="search_button">Search</string>
+    <string name="content_description_media">picture</string>
+    <string name="title">singer</string>
+    <string name="secondary_text">song</string>
+    <string name="supporting_text">song text</string>
+    <string name="search_for_top_musicians_around_the_world">Search for top musicians around the world</string>
+    <string name="search_for_lyrics">Search for lyrics</string>
 </resources>

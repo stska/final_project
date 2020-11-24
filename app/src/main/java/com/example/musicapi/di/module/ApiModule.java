@@ -1,6 +1,6 @@
 package com.example.musicapi.di.module;
 
-import com.example.musicapi.mvp.model.api.IDataSoutce;
+import com.example.musicapi.mvp.model.api.IDataSource;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -30,12 +30,12 @@ public class ApiModule {
     }
     @Singleton
     @Provides
-    IDataSoutce api(@Named("rootUrl") String rootUrl,Gson gson){
+    IDataSource api(@Named("rootUrl") String rootUrl, Gson gson){
         return new Retrofit.Builder()
                 .baseUrl("https://api.musixmatch.com/ws/1.1/")
                 .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .build().create(IDataSoutce.class);
+                .build().create(IDataSource.class);
     }
 }
 
