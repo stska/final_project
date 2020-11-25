@@ -1,4 +1,4 @@
-package com.example.musicapi.mvp.model.presenter.list;
+package com.example.musicapi.mvp.presenter.list;
 
 public interface ICountryTopItemView extends IItemView {
     void setArtName(String name);

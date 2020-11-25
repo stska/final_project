@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 
 import com.example.musicapi.MusicInfoApplication;
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.presenter.CountryPickPresenter;
+import com.example.musicapi.mvp.presenter.CountryPickPresenter;
 import com.example.musicapi.mvp.view.CountryPickView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;

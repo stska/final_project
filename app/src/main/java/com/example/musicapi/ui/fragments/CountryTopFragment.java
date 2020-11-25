@@ -13,12 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.api.IDataSource;
-import com.example.musicapi.mvp.model.presenter.CountryTopPresenter;
+import com.example.musicapi.mvp.presenter.CountryTopPresenter;
 import com.example.musicapi.mvp.view.CountryPickView;
 import com.example.musicapi.ui.adapter.CountryArtistTopRVAdapter;
-
-import org.w3c.dom.Text;
 
 import moxy.MvpAppCompatFragment;
 import moxy.presenter.InjectPresenter;

@@ -1,4 +1,4 @@
-package com.example.musicapi.mvp.model.presenter;
+package com.example.musicapi.mvp.presenter;
 
 import com.example.musicapi.MusicInfoApplication;
 import com.example.musicapi.mvp.model.entity.repo.IChartRepo;

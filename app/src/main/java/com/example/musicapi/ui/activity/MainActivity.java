@@ -3,7 +3,7 @@ package com.example.musicapi.ui.activity;
 import android.os.Bundle;
 import com.example.musicapi.MusicInfoApplication;
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.presenter.MainPresenter;
+import com.example.musicapi.mvp.presenter.MainPresenter;
 import com.example.musicapi.mvp.view.MainView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import javax.inject.Inject;
