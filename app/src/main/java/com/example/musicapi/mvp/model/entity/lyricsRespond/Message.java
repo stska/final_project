@@ -13,6 +13,7 @@ public class Message {
     @Expose
     private Body body;
 
+
     public Header getHeader() {
         return header;
     }
@@ -24,6 +25,7 @@ public class Message {
     public Body getBody() {
         return body;
     }
+
 
     public void setBody(Body body) {
         this.body = body;

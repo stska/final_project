@@ -9,4 +9,5 @@ import io.reactivex.rxjava3.core.Single;
 
 public interface IChartRepo {
     Single <MusicApiResponse> getChart(String page,String numberOfArtists,String country,String apiKey);
+
 }

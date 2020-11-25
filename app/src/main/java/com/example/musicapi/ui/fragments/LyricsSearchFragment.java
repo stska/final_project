@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.presenter.LyricsSearchPresenter;
+import com.example.musicapi.mvp.presenter.LyricsSearchPresenter;
 import com.example.musicapi.mvp.view.LyricsSearchView;
 import com.google.android.material.textfield.TextInputLayout;
 

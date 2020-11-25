@@ -11,9 +11,8 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.presenter.LyricsPresenter;
+import com.example.musicapi.mvp.presenter.LyricsPresenter;
 import com.example.musicapi.mvp.view.LyricsResultView;
-import com.example.musicapi.mvp.view.LyricsViewCard;
 
 import moxy.MvpAppCompatFragment;
 import moxy.presenter.InjectPresenter;

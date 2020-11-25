@@ -1,18 +1,16 @@
-package com.example.musicapi.mvp.model.presenter;
+package com.example.musicapi.mvp.presenter;
 
 import android.util.Log;
 
 import com.example.musicapi.MusicInfoApplication;
 import com.example.musicapi.mvp.model.entity.ArtistList;
 import com.example.musicapi.mvp.model.entity.repo.IChartRepo;
-import com.example.musicapi.mvp.model.presenter.list.ICountryTopItemView;
-import com.example.musicapi.mvp.model.presenter.list.ICountryTopListPresenter;
-import com.example.musicapi.mvp.model.presenter.list.IItemView;
+import com.example.musicapi.mvp.presenter.list.ICountryTopItemView;
+import com.example.musicapi.mvp.presenter.list.ICountryTopListPresenter;
 import com.example.musicapi.mvp.view.CountryPickView;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicReference;
 
 import javax.inject.Inject;
 

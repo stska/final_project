@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.musicapi.R;
-import com.example.musicapi.mvp.model.presenter.list.ICountryTopItemView;
-import com.example.musicapi.mvp.model.presenter.list.ICountryTopListPresenter;
+import com.example.musicapi.mvp.presenter.list.ICountryTopItemView;
+import com.example.musicapi.mvp.presenter.list.ICountryTopListPresenter;
 
 public class CountryArtistTopRVAdapter extends RecyclerView.Adapter<CountryArtistTopRVAdapter.ViewHolder> {
       private final ICountryTopListPresenter presenter;
