@@ -13,14 +13,13 @@ import dagger.Provides;
 
 @Module
 public class RepoModule {
-    @Singleton
+
     @Provides
     public  IChartRepo chart(IDataSource api){
         return new RetrofitMusixMatch(api);
 
     }
 
-    @Singleton
     @Provides
     public ILyricsRepo lyrics(IDataSource api) {
         return  new RetrofitMusixMatchLyrics(api);

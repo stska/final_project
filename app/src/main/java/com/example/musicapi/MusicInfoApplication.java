@@ -11,7 +11,6 @@ public class MusicInfoApplication extends Application {
     public static MusicInfoApplication INSTANCE;
     public static final boolean DEBUG = true;
     private AppComponent appComponent;
-  //  private AppComponent appComponent;
 
     @Override
     public void onCreate() {
@@ -22,9 +21,7 @@ public class MusicInfoApplication extends Application {
     public static Context getAppContext() {
         return INSTANCE;
     }
-  //  public AppComponent getAppComponent() {
- //       return appComponent;
-  //  }
+
   public AppComponent getAppComponent() {
       return appComponent;
   }

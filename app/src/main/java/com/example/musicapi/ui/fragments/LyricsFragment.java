@@ -74,7 +74,7 @@ public class LyricsFragment  extends MvpAppCompatFragment implements LyricsResul
 
     @Override
     public void setSongTitle(String song) {
-        songTitle.setText(song);
+         songTitle.setText(song);
     }
 
     @Override

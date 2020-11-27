@@ -15,7 +15,7 @@
         android:hint="@string/input_the_country"
         android:imeOptions="actionNext"
         android:inputType="text"
-        android:popupBackground="@color/black"
+        android:popupBackground="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

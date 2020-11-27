@@ -54,17 +54,14 @@ public class CountryPickFragment extends MvpAppCompatFragment implements Country
 
        view = inflater.inflate(R.layout.fragment_countries,container,false);
        searchBtn = view.findViewById(R.id.searchTopCtBtn);
-       searchBtn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
-               String givenCountry = textView.getText().toString();
-               if(!givenCountry.isEmpty()){
-                   String ct = getCountryCode(givenCountry);
-                   if(!ct.isEmpty()) {
-                       presenter.pickCountryFromArray(ct);
-                   } Toast.makeText(getContext(),WRONG_WRITTEN_COUNTRY,Toast.LENGTH_LONG).show();
-               }else Toast.makeText(getContext(),COUNTRY_NOT_FOUND,Toast.LENGTH_LONG).show();
-           }
+       searchBtn.setOnClickListener(view -> {
+           String givenCountry = textView.getText().toString();
+           if(!givenCountry.isEmpty()){
+               String ct = getCountryCode(givenCountry);
+               if(!ct.isEmpty()) {
+                   presenter.pickCountryFromArray(ct);
+               } Toast.makeText(getContext(),WRONG_WRITTEN_COUNTRY,Toast.LENGTH_LONG).show();
+           }else Toast.makeText(getContext(),COUNTRY_NOT_FOUND,Toast.LENGTH_LONG).show();
        });
         ArrayAdapter<String> adapter = new ArrayAdapter<>(MusicInfoApplication.getAppContext(),android.R.layout.simple_spinner_dropdown_item, initListOfCountries());
         textView = (AutoCompleteTextView)view.findViewById(R.id.autoCompleteTextView);
