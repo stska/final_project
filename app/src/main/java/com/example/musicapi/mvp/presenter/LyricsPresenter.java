@@ -37,8 +37,8 @@ public class LyricsPresenter extends MvpPresenter<LyricsResultView> {
 
     public LyricsPresenter(String singer, String song) {
         MusicInfoApplication.INSTANCE.getAppComponent().inject(this);
-        this.singer = singer;
-        this.song = song;
+        this.singer =  singer.substring(0,1).toUpperCase() + singer.substring(1).toLowerCase();;
+        this.song =  song.substring(0,1).toUpperCase() + song.substring(1).toLowerCase();;
     }
 
     public void loadLyrics() {

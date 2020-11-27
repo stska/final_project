@@ -1,6 +1,7 @@
 package com.example.musicapi.ui.adapter;
 
 import android.content.Context;
+import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.musicapi.R;
 import com.example.musicapi.mvp.presenter.list.ICountryTopItemView;
 import com.example.musicapi.mvp.presenter.list.ICountryTopListPresenter;
+
+import retrofit2.http.Url;
 
 public class CountryArtistTopRVAdapter extends RecyclerView.Adapter<CountryArtistTopRVAdapter.ViewHolder> {
       private final ICountryTopListPresenter presenter;
@@ -55,13 +58,13 @@ public class CountryArtistTopRVAdapter extends RecyclerView.Adapter<CountryArtis
             artist = itemView.findViewById(R.id.artistName);
             score = itemView.findViewById(R.id.score);
             twitter = itemView.findViewById(R.id.twitterInfo);
-           // artistTitle = itemView.findViewById(R.id.artistTitle);
+
         }
 
         @Override
         public void setArtName(String name) {
             artist.setText(name);
-          //  artistTitle.setText("Artist");
+
         }
 
         @Override
@@ -72,7 +75,9 @@ public class CountryArtistTopRVAdapter extends RecyclerView.Adapter<CountryArtis
         @Override
         public void setArtTwitter(String twitURL) {
             twitter.setText(twitURL);
+            Linkify.addLinks(twitter,Linkify.WEB_URLS);
         }
+
 
         @Override
         public int getPos() {
